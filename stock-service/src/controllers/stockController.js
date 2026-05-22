@@ -2,7 +2,7 @@ const axios = require('axios');
 const Movement = require('../models/Movement');
 const { publishStockAlert } = require('../services/rabbitPublisher');
 
-const PRODUCT_SERVICE_URL = process.env.PRODUCT_SERVICE_URL || 'http://product-service:4002';
+const PRODUCT_SERVICE_URL = process.env.PRODUCT_SERVICE_URL || 'http://localhost:4002';
 
 /**
  * Récupère les informations d'un produit depuis le product-service.
