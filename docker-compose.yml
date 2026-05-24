@@ -83,7 +83,7 @@ services:
       dockerfile: Dockerfile
     container_name: stockalert-stock
     ports:
-      - "4003:4003"
+      - "4005:4003"
     environment:
       PORT: 4003
       MONGO_URI: mongodb://mongodb:27017
